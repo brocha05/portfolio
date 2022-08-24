@@ -330,3 +330,119 @@ input::placeholder, textarea::placeholder{
   font-size: 1.5em;
   color: white;
 }
+
+@media only screen and (max-width: 900px) {
+  
+  /* NAvbar */
+  .main {
+    padding: 50px 0 20px 0;
+  } 
+
+  .menu{
+    display: none;
+  }
+
+  .navbar-wrap {
+    margin: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+  }
+
+  /* About */
+  .main-content {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 90%;
+
+  }
+
+  .main img {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+  }
+
+  .button-container{
+    display: flex;
+    justify-content: center;
+  }
+ 
+  /* Skills */
+  .skills {
+    height: 60vh;
+  }
+
+  .container-skills {
+    width: 90%;
+    gap: 5px;
+    padding: 5px 5px;
+    height: unset;
+  }
+
+  .skill-card {
+    width: 100px;
+    height: 100px;
+    padding: 10px 10px;
+  }
+
+  .card {
+    max-width: 370px;
+  }
+
+  /* Project */
+
+  .portfolio {
+    height: unset; 
+    padding-bottom: 20px;
+  }
+  
+  .card {
+    max-width: 90%;
+    margin: 20px auto;
+    height: 80%;
+    padding-bottom: 10px;
+  }
+
+  .card-description {
+    padding: 10px;
+  }
+
+  /* Contact */
+  .contact-section {
+    height: unset; 
+    padding-bottom: 20px;
+  }
+
+  .container-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  #img-contact{
+    width: 220px;
+    height: 220px;
+  }
+
+  .form-group {
+    width: unset; 
+    margin-top: unset;
+  }
+
+  .container {
+    display: inline;
+  }
+
+  /* Footer */
+
+  .footer {
+    height: unset; 
+    padding: 10px;
+  } 
+
+  .footer-content h2 {
+    font-size: 2em;
+  }
+}
