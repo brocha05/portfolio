@@ -5,6 +5,7 @@ primary: #191c32
 secundary: #5b67bf
 highlight: #e2cc0f
 */
+
 * {
   margin: 0;
   padding: 0;
@@ -29,7 +30,7 @@ body {
   width: 80%;
   display: flex;
   justify-content: space-between;
-  padding: 2em;
+  padding: 2em 0;
 }
 
 .brand {
@@ -135,7 +136,7 @@ p{
 
 .skills{
   background-color: #5b67bf;
-  height: 80vh;
+  padding-bottom: 20px
 }
 
 .container-skills{
@@ -355,7 +356,7 @@ input::placeholder, textarea::placeholder{
     display: flex;
     flex-direction: column-reverse;
     width: 90%;
-
+    height: unset;
   }
 
   .main img {
@@ -370,9 +371,6 @@ input::placeholder, textarea::placeholder{
   }
  
   /* Skills */
-  .skills {
-    height: 60vh;
-  }
 
   .container-skills {
     width: 90%;
