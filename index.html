@@ -8,7 +8,7 @@
         <link rel="icon" href="img/jd.png">
         <link rel="stylesheet" href="css/styles.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css">
-    
+        <script src="helper.js"></script>
     </head>
     <body>
 
@@ -20,9 +20,9 @@
                     </div>
                     <ul class="menu">
                         <li><a href="#"  class="active">Home</a></li>
-                        <li><a href="#">Skills</a></li>
-                        <li><a href="#">Projects</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
             </nav>
@@ -42,7 +42,7 @@
             </div>
         </main>
 
-        <div class="skills">
+        <div class="skills" id="skills">
             <div class="portfolio-heading">
                 <h2>Skills</h2>
                 <div class="divider"></div>
@@ -79,7 +79,7 @@
             </div>
         </div>
 
-        <div class="portfolio">
+        <div class="portfolio" id="projects">
             <div class="portfolio-heading">
                 <h2>Projects</h2>
                 <div class="divider"></div>
@@ -88,7 +88,7 @@
                 <div class="card">
                     <img src="img/petcare.png" alt="" class="card__img">
                     <h2 class="card__title">PetCare</h2>
-                    <p class="card-description">Reservation system similar to Airbnb functionality</p>
+                    <p class="card-description">Reservation system similar to Airbnb functionality.</p>
                     <div class="card__proyect-links">
                         <a href="https://petcare-test.herokuapp.com/" target="_blank">
                             <i class="fas fa-globe-asia"></i>
@@ -101,7 +101,7 @@
                 <div class="card">
                     <img src="img/petcare.png" alt="" class="card__img">
                     <h2 class="card__title">PetCare</h2>
-                    <p class="card-description">Reservation system similar to Airbnb functionality</p>
+                    <p class="card-description">Reservation system similar to Airbnb functionality.</p>
                     <div class="card__proyect-links">
                         <a href="https://petcare-test.herokuapp.com/" target="_blank">
                             <i class="fas fa-globe-asia"></i>
@@ -112,14 +112,14 @@
                     </div>
                 </div>
                 <div class="card">
-                    <img src="img/petcare.png" alt="" class="card__img">
-                    <h2 class="card__title">PetCare</h2>
-                    <p class="card-description">Reservation system similar to Airbnb functionality</p>
+                    <img src="img/gifexpert.jpg" alt="" class="card__img">
+                    <h2 class="card__title">GifExpertApp</h2>
+                    <p class="card-description">Web app developed with React. Fetch data from Giphy API and find gifs you are interested in.</p>
                     <div class="card__proyect-links">
-                        <a href="https://petcare-test.herokuapp.com/" target="_blank">
+                        <a href="https://brocha05.github.io/react-gifExpertApp/" target="_blank">
                             <i class="fas fa-globe-asia"></i>
                         </a>
-                        <a href="https://github.com/BC-MAY-21-ROR/proyecto-final-pf-f22-t4" target="_blank">
+                        <a href="https://github.com/brocha05/react-gifExpertApp" target="_blank">
                             <i class="fab fa-github"></i>
                         </a>
                     </div>
@@ -127,7 +127,7 @@
             </div>
         </div>
         
-        <div class="contact-section">
+        <div class="contact-section" id="contact">
             <div class="contact-heading">
             <h2>Contact me!</h2>
             <div class="divider"></div>
@@ -136,11 +136,13 @@
             <img src="img/contactme.png" alt="" id="img-contact">
             <div class="contact-form">
                 <h4>Send me a message...</h4>
-                <form class="form-group">
-                <input type="text" placeholder="Name" class="input">
-                <input type="email" placeholder="Email" class="input">
-                <textarea name="message" placeholder="Place your message here..."></textarea>
-                <button type="submit" class="btn-submit">Send message</button>
+                <form class="form-group" action="https://formsubmit.co/brocha_05@hotmail.com" method="POST">
+                    <input type="text" placeholder="Name" class="input" name="Name">
+                    <input type="email" placeholder="Email" class="input" name="Email">
+                    <textarea name="message" placeholder="Place your message here..." name="Message"></textarea>
+                    <button type="submit" class="btn-submit download-cv" onclick=onMessageSend()>Send message</button>
+                    <input type="hidden" name="_next" value="http://127.0.0.1:5500/">
+                    <input type="hidden" name="_captcha" value="false">
                 </form>
             </div>
             </div>
