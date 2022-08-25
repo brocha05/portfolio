@@ -169,6 +169,11 @@ p{
 }
 
 /* Portfolio */
+
+#sentiment-img{
+  object-fit: cover;
+}
+
 .portfolio{
   background-color: #191c32;
   color: #fff;
